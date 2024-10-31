@@ -1,81 +1,49 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Fire-detecting Infrared Rescue and Evacuation System (FIRE)
+description: An advanced fire detection and rescue support system using infrared technology, machine learning, and cloud integration.
+img: assets\img\FIreprof.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: Personal
+# giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+An innovative system designed to enhance fire safety by providing real-time fire detection and evacuation support using cutting-edge technology.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/fire-detection-overview.jpg" title="System Overview of FIRE" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
+**Background:**  
+In emergency fire situations, identifying the number and location of people trapped is critical for rescuers. The **FIRE system** is designed to minimize casualties by providing real-time situational awareness. Using **infrared cameras**, **machine learning**, and **cloud connectivity**, FIRE detects fires automatically, analyzes indoor conditions, and relays vital information to rescue teams for a swift and safe response.
+
+---
+
+### Key Features
+
+- **Infrared Camera with Heat-Resistant Casing**: Utilizes a high-performance infrared camera, encased in PBI plastic for heat resistance, to detect fire and locate people in real time.
+- **Machine Learning & Computer Vision**: Processes data to identify human presence and predict fire spread using cloud-stored training data, enhancing detection accuracy.
+- **Self-Powering Thermoelectric Generator**: Generates power from ambient heat in the building, ensuring functionality even during power outages.
+- **Cloud-Based Communication**: Uses a SaaS model to transmit real-time data to fire stations, allowing for immediate and informed responses.
+
+### Anticipated Impact
+
+FIRE aims to significantly reduce firefighter risks and increase rescue effectiveness by providing precise information on indoor conditions and locations of people. This technology allows rescuers to make informed decisions and minimize delays in life-saving operations.
+
+### Technical Stack
+
+- **Hardware**: Infrared cameras, thermoelectric generators, PBI heat-resistant casing
+- **Software**: Machine learning for computer vision, cloud-based communication (SaaS)
+
+This project represents a major step forward in fire safety technology by integrating robust detection and communication tools to improve emergency response and support rescue operations.
+
+---
+
+### Additional Documents
+
+- [작품 구상도 (Project Blueprint)](path/to/작품구상도.pdf)
+- [작품 설명서 (Project Description)](path/to/작품설명서.pdf)
+
+(_Note: Some images are conceptual and illustrate system capabilities and potential deployment scenarios._)
