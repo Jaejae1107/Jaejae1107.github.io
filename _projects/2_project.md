@@ -46,4 +46,4 @@ This project represents a major step forward in fire safety technology by integr
 - [Project Blueprint](assets/img/Blueprint.pdf)
 - [Project Description](assets/img/Description.pdf)
 
-(_Note: images are conceptual and illustrate system capabilities and potential deployment scenarios.)
+(\_Note: images are conceptual and illustrate system capabilities and potential deployment scenarios.)
