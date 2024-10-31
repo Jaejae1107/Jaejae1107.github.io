@@ -2,7 +2,7 @@
 layout: page
 title: Fire-detecting Infrared Rescue and Evacuation System (FIRE)
 description: An advanced fire detection and rescue support system using infrared technology, machine learning, and cloud integration.
-img: assets\img\FIreprof.jpg
+img: assets/img/FIreprof.jpg
 importance: 2
 category: Personal
 # giscus_comments: true
@@ -43,7 +43,7 @@ This project represents a major step forward in fire safety technology by integr
 
 ### Additional Documents
 
-- [작품 구상도 (Project Blueprint)](path/to/작품구상도.pdf)
-- [작품 설명서 (Project Description)](path/to/작품설명서.pdf)
+<!-- - [작품 구상도 (Project Blueprint)](path/to/작품구상도.pdf)
+- [작품 설명서 (Project Description)](path/to/작품설명서.pdf) -->
 
 (_Note: Some images are conceptual and illustrate system capabilities and potential deployment scenarios._)
