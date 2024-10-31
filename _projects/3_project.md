@@ -27,11 +27,11 @@ With the rapid growth in EV adoption, there’s a critical need for efficient ch
 
 - **Forecasting Pipeline**: Multiple models were tested within the SAS Forecast Studio pipeline, including ARIMAX, Exponential Smoothing, and Neural Network-based models, to evaluate predictive accuracy. Our final choice was a **Stacked Model (NN + Time Series)** due to its effectiveness in balancing prediction accuracy and computational efficiency.
 
-  <div class="row justify-content-sm-center">
+<div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
       {% include figure.liquid path="assets/img/forecasting-pipeline.jpg" title="Forecasting Pipeline Models and Workflow" class="img-fluid rounded z-depth-1" %}
     </div>
-  </div>
+</div>
 
 - **Demand Estimation Technique**: Developed a three-step methodology to estimate the number of EVs likely requiring charging, factoring in vehicle exit rates, traffic volume, and EV ratios.
 
