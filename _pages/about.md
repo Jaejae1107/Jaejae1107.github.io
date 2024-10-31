@@ -23,4 +23,3 @@ I’m Jaewon Cho, currently pursuing a Bachelor’s in Computer Engineering at P
 I also completed a software engineering internship at Samsung Electronics, where I developed backend systems and managed databases. These hands-on projects, along with my research experience, reflect my passion for data engineering, machine learning, and applying technology to solve real-world challenges across industry sectors.
 
 In my free time, I enjoy playing basketball and listening to music, which help me stay creative and balanced.
-
