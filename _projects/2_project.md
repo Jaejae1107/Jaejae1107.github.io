@@ -8,11 +8,11 @@ category: Personal
 # giscus_comments: true
 ---
 
-An innovative system designed to enhance fire safety by providing real-time fire detection and evacuation support using cutting-edge technology.
+An innovative system designed to enhance fire safety by providing real-time fire detection and evacuation support using cutting-edge technology. This project was developed as part of a competition organized by the **Korea Industrial Engineering Association**.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/fire-detection-overview.jpg" title="System Overview of FIRE" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/firedetectionoverview.jpg" title="System Overview of FIRE" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
