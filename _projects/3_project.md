@@ -1,81 +1,63 @@
 ---
 layout: page
 title: Predicting EV Charging Demand(SAS Curiosity Cup)
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+description: A novel approach to forecasting EV charging demand through traffic data, achieving 2nd place in the SAS Curiosity Cup.
+img: /assets/img/ev-demand-background.jpg
+# redirect: https://unsplash.com
+importance: 1
+category: Research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+A data-driven approach to forecast electric vehicle (EV) charging demand by analyzing traffic flows. This project, developed for the **SAS Curiosity Cup 2024**, was awarded **2nd place in Data Analysis**, competing against 107 teams from 19 countries.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/traffic-flow-overview.jpg" title="Traffic Flow Data Analysis for EV Demand Prediction" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
+**Background:**  
+With the rapid growth in EV adoption, there’s a critical need for efficient charging infrastructure. Traditional demand forecasting relies heavily on specific station usage data, which is often unavailable due to privacy regulations. To address this gap, our project leverages **traffic flow data** to estimate EV charging demand, focusing on vehicles exiting highways in California. This unique approach aims to predict demand patterns without direct access to granular station data.
+
+---
+
+### Key Components
+
+- **Data Collection and Preprocessing**: Utilized traffic data from California’s I210 Corridor, sourced from the Caltrans PeMS database. Our team processed over 700 days of traffic data across multiple sensors to prepare it for analysis.
+
+- **Forecasting Pipeline**: Multiple models were tested within the SAS Forecast Studio pipeline, including ARIMAX, Exponential Smoothing, and Neural Network-based models, to evaluate predictive accuracy. Our final choice was a **Stacked Model (NN + Time Series)** due to its effectiveness in balancing prediction accuracy and computational efficiency.
+
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+      {% include figure.liquid path="assets/img/forecasting-pipeline.jpg" title="Forecasting Pipeline Models and Workflow" class="img-fluid rounded z-depth-1" %}
+    </div>
+  </div>
+
+- **Demand Estimation Technique**: Developed a three-step methodology to estimate the number of EVs likely requiring charging, factoring in vehicle exit rates, traffic volume, and EV ratios.
+
+- **Visualization and Analysis**: To validate model accuracy and forecasted demand, we created various heat maps and graphical representations of traffic patterns. These visuals enabled a deeper understanding of traffic flow variations and helped refine our predictions for charging demand.
+
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+      {% include figure.liquid path="assets/img/visualization-analysis.jpg" title="Visualization of Traffic Flow and Forecasted Demand" class="img-fluid rounded z-depth-1" %}
+    </div>
+  </div>
+
+---
+
+### Technical Stack
+
+- **Data Source**: Caltrans PeMS for traffic flow data
+- **Software**: SAS Forecast Studio, SAS Viya for data processing and model evaluation
+
+### Presentation
+
+As part of the SAS Curiosity Cup competition, we presented our findings to a global audience. You can watch the full presentation here: [Presentation Video](external_link_to_video)
+
+### Conclusion
+
+This project demonstrates an innovative approach to estimating EV charging demand by analyzing indirect data sources like traffic flow. Our methodology addresses data scarcity issues in EV infrastructure planning and has potential applications in urban planning and energy management.
+
+### Additional Documents
+
+- [Full Project Report](path/to/curiosity-cup-report.pdf)
