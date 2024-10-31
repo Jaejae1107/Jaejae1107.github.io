@@ -1,80 +1,80 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Synthetic Data Generation for EV Charging Demand Forecasting
+description: A project focused on overcoming data scarcity in EV infrastructure through synthetic data generation and machine learning.
+img: assets/img/operations_research_purdue_logo.jpg
+importance: 2
+category: Research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project aims to address the lack of granular, publicly accessible data on EV charging demand by generating synthetic data to improve forecasting accuracy. This ongoing research project involves three main phases: **synthetic data generation**, **demand forecasting**, and **optimization modeling**.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/synthetic-data-overview.jpg" title="Overview of the Synthetic Data Generation Process" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
 
-{% endraw %}
+**Abstract:**  
+With the rapid adoption of electric vehicles (EVs), demand forecasting for charging infrastructure is increasingly essential. Traditional models, reliant on historical data, are limited by data availability. Our project generates high-quality synthetic data using advanced models such as **Variational Autoencoders (VAEs)** and **TimeGAN** to replicate realistic EV charging patterns, providing a robust foundation for demand prediction models.
+
+---
+
+### Key Components
+
+- **Synthetic Data Generation**:  
+  We employ multiple approaches to create synthetic time-series data that reflects real-world EV charging behavior:
+
+  - **TimeGAN**: Focuses on generating time-dependent sequences by combining GANs with RNNs. This model captures both static and dynamic patterns in data.
+  - **COT-GAN**: Uses Optimal Transport for broader sequential data generation, allowing flexibility beyond strict time-series constraints.
+  - **ETS Model (Exponential Smoothing State Space)**: Selected for cases where deep learning models are unsupported by SAS Viya, providing trend and seasonality capture.
+
+  <div class="row justify-content-sm-center">
+    <div class="col-md-6">
+      {% include figure.liquid path="assets/img/timegan-diagram.jpg" title="TimeGAN Model Workflow" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-md-6">
+      {% include figure.liquid path="assets/img/ets-model-output.jpg" title="ETS Model Synthetic Data Output" class="img-fluid rounded z-depth-1" %}
+    </div>
+  </div>
+
+- **Correlation Evaluation**:  
+  We assess the quality of synthetic data by calculating feature-wise and time-wise correlations to ensure fidelity to the original dataset. This helps maintain key relationships and temporal dynamics in the data.
+
+- **Demand Forecasting with Machine Learning**:  
+  Utilizing CNNs and RNNs (LSTM and GRU layers), our demand prediction models capture short- and long-term dependencies in EV charging behavior. Hyperparameter tuning and preprocessing ensure model generalization and accuracy.
+
+- **Optimization Modeling**:  
+  A Real-Time Pricing (RTP) model is implemented in SAS Viya to adjust charging prices dynamically, enhancing grid efficiency by distributing demand and promoting off-peak usage.
+
+### Weekly Progress Updates
+
+1. **TimeGAN Implementation**:  
+   Set up and configured TimeGAN for time-series data generation, addressing issues with module imports and ensuring compatibility in Google Colab.
+
+2. **COT-GAN Trials**:  
+   Explored COT-GAN for sequence alignment in synthetic data generation, successfully adjusting for broader sequential data generation needs.
+
+3. **ETS Model in SAS Viya**:  
+   Used the ETS model to generate synthetic data where deep learning models were unsupported, yielding expanded data for improved forecasting.
+
+4. **VAE Framework Development**:  
+   Constructed a VAE framework with an encoder, latent vectors, and a decoder to facilitate flexible data generation.
+
+5. **Challenges and Solutions**:  
+   Encountered compatibility issues with libraries, data type handling, and GPU resource limitations. Applied adjustments such as data type conversions and metadata updates for smooth model execution.
+
+---
+
+### Technical Stack
+
+- **Models**: TimeGAN, COT-GAN, VAE, ETS Model
+- **Platform**: Google Colab, SAS Viya for data generation and optimization modeling
+
+### Current Status
+
+This research is still in progress, with ongoing model tuning and evaluation. No final results have been obtained yet.
+
+### Additional Documents
+
+- [Weekly Progress Report](path/to/progress-report.pdf)
