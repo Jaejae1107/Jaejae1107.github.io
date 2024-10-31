@@ -35,6 +35,13 @@ FIRE aims to significantly reduce firefighter risks and increase rescue effectiv
 ### Technical Stack
 
 - **Hardware**: Infrared cameras, thermoelectric generators, PBI heat-resistant casing
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/camera-design.jpg" title="Camera Design Blueprint" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
 - **Software**: Machine learning for computer vision, cloud-based communication (SaaS)
 
 This project represents a major step forward in fire safety technology by integrating robust detection and communication tools to improve emergency response and support rescue operations.
