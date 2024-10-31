@@ -12,7 +12,7 @@ This project was developed as part of a competition organized by the **Korea Ind
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/firedetectionoverview.jpg" title="System Overview of FIRE" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets\img\assetsimgfiredetectionoverview.jpg" title="System Overview of FIRE" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
