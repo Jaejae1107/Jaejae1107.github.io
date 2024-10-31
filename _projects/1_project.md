@@ -40,13 +40,3 @@ Boiler Time is an app designed to help students stay organized and engaged with 
 - **Database & Backend**: Google Firebase
 
 This project allowed me to design an interface that enhances Purdue students' campus experience, with a focus on accessibility and functionality.
-
----
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/boiler-time-account.jpg" title="User-friendly account management with secure data storage" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-
-Boiler Time combines a user-friendly account management system with robust data security. Students can easily manage their profiles, view posts, and update account details. Leveraging Firebase, the app ensures secure storage and protection of user data, safeguarding student privacy and enhancing reliability.
