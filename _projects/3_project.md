@@ -55,7 +55,7 @@ With the rapid growth in EV adoption, there’s a critical need for efficient ch
 
 ### Presentation
 
-As part of the SAS Curiosity Cup competition, we presented our findings to a global audience. You can watch the full presentation here: [Presentation Video](https://drive.google.com/file/d/1DMhQXusxH984wqGK-CzVcuGfbRKRSVd0/view?pli=1)
+As part of the SAS Curiosity Cup competition, we presented our findings to a global judges. You can watch the full presentation here: [Presentation Video](https://drive.google.com/file/d/1DMhQXusxH984wqGK-CzVcuGfbRKRSVd0/view?pli=1)
 
 ### Conclusion
 
