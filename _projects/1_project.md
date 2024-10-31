@@ -2,7 +2,7 @@
 layout: page
 title: BOILER TIME
 description: Developing a student-centric scheduling and community app
-img: assets\img\boilertimepic.png
+img: assets\img\boilertimepic.jpg
 importance: 1
 category: work
 # related_publications: true
