@@ -8,8 +8,6 @@ category: work
 # related_publications: true
 ---
 
-## Boiler Time
-
 A comprehensive app for Purdue students, combining scheduling and community features to improve student life on campus.
 
 <div class="row">
