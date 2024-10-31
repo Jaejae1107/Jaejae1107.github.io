@@ -60,4 +60,4 @@ This project demonstrates an innovative approach to estimating EV charging deman
 
 ### Additional Documents
 
-- [Full Project Report](path/to/curiosity-cup-report.pdf)
+- [Full Project Report](/assets/pdf/The Curiosity Cup Challenge - 2024.pdf)
