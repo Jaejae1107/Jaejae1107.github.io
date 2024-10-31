@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Learn, Innovate, and Impact
+subtitle: Computer Engineering @ Purdue University
 
 profile:
   align: right
