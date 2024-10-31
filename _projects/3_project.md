@@ -41,6 +41,9 @@ With the rapid growth in EV adoption, there’s a critical need for efficient ch
     <div class="col-sm-8 mt-3 mt-md-0">
       {% include figure.liquid path="assets/img/visualization-analysis.jpg" title="Visualization of Traffic Flow and Forecasted Demand" class="img-fluid rounded z-depth-1" %}
     </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/predicted-traffic-heatmap.jpg" title="Predicted Traffic Flow Heat Map for 04-24-2018" class="img-fluid rounded z-depth-1" %}
+    </div>
   </div>
 
 ---
