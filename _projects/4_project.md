@@ -26,7 +26,7 @@ With the rapid adoption of electric vehicles (EVs), demand forecasting for charg
   We employ multiple approaches to create synthetic time-series data that reflects real-world EV charging behavior:
 
   - **TimeGAN**: Focuses on generating time-dependent sequences by combining GANs with RNNs. This model captures both static and dynamic patterns in data.
-  - **COT-GAN**: Uses Optimal Transport for broader sequential data generation, allowing flexibility beyond strict time-series constraints.
+  - **VAE (Variational Autoencoder)**: A probabilistic model that learns to compress and recreate data by encoding it into a latent space. The encoder compresses the input data, and the decoder reconstructs or generates new data from the latent space, maintaining essential features.
   - **ETS Model (Exponential Smoothing State Space)**: Selected for cases where deep learning models are unsupported by SAS Viya, providing trend and seasonality capture.
 
   <div class="row justify-content-sm-center">
@@ -52,29 +52,22 @@ With the rapid adoption of electric vehicles (EVs), demand forecasting for charg
 1. **TimeGAN Implementation**:  
    Set up and configured TimeGAN for time-series data generation, addressing issues with module imports and ensuring compatibility in Google Colab.
 
-2. **COT-GAN Trials**:  
-   Explored COT-GAN for sequence alignment in synthetic data generation, successfully adjusting for broader sequential data generation needs.
-
-3. **ETS Model in SAS Viya**:  
+2. **ETS Model in SAS Viya**:  
    Used the ETS model to generate synthetic data where deep learning models were unsupported, yielding expanded data for improved forecasting.
 
-4. **VAE Framework Development**:  
+3. **VAE Framework Development**:  
    Constructed a VAE framework with an encoder, latent vectors, and a decoder to facilitate flexible data generation.
 
-5. **Challenges and Solutions**:  
+4. **Challenges and Solutions**:  
    Encountered compatibility issues with libraries, data type handling, and GPU resource limitations. Applied adjustments such as data type conversions and metadata updates for smooth model execution.
 
 ---
 
 ### Technical Stack
 
-- **Models**: TimeGAN, COT-GAN, VAE, ETS Model
-- **Platform**: Google Colab, SAS Viya for data generation and optimization modeling
+- **Models**: TimeGAN, VAE, ETS Model
+- **Platform**: Google Colab, SAS Viya for data generation and optimization modeling, Python
 
 ### Current Status
 
 This research is still in progress, with ongoing model tuning and evaluation. No final results have been obtained yet.
-
-### Additional Documents
-
-- [Weekly Progress Report](path/to/progress-report.pdf)
