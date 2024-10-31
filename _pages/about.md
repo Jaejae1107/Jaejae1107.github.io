@@ -8,11 +8,10 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info: |
     <p>408-505-4635</p>
     <p>Dublin, California</p>
     <p>Seoul, South Korea</p>
- 
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -24,6 +23,7 @@ social: true # includes social icons at the bottom of the page
 I also completed a software engineering internship at Samsung Electronics, where I developed backend systems and managed databases. These hands-on projects, along with my research experience, reflect my passion for data engineering, machine learning, and applying technology to solve real-world challenges across industry sectors.
 
 In my free time, I enjoy playing basketball and listening to music, which help me stay creative and balanced. -->
+
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
