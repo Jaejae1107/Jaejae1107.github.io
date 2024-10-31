@@ -43,7 +43,7 @@ This project represents a major step forward in fire safety technology by integr
 
 ### Additional Documents
 
-<!-- - [작품 구상도 (Project Blueprint)](path/to/작품구상도.pdf)
-- [작품 설명서 (Project Description)](path/to/작품설명서.pdf) -->
+- [Project Blueprint](assets/img/Blueprint.pdf)
+- [Project Description](assets/img/Description.pdf)
 
-(_Note: Some images are conceptual and illustrate system capabilities and potential deployment scenarios._)
+(_Note: images are conceptual and illustrate system capabilities and potential deployment scenarios.)
