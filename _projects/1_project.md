@@ -45,11 +45,9 @@ This project allowed me to design an interface that enhances Purdue students' ca
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/boiler-time-data.jpg" title="Secure data storage with Firebase" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/boiler-time-security.jpg" title="Enhanced data security for student privacy" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/boiler-time-account.jpg" title="User-friendly account management with secure data storage" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
-Boiler Time prioritizes student data security and privacy, utilizing Firebase for secure data storage and management, ensuring all information is protected and readily accessible.
+Boiler Time combines a user-friendly account management system with robust data security. Students can easily manage their profiles, view posts, and update account details. Leveraging Firebase, the app ensures secure storage and protection of user data, safeguarding student privacy and enhancing reliability.
+
