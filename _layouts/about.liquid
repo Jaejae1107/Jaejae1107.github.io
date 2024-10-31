@@ -56,6 +56,14 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Projects -->
+    {% if site.projects %}
+      <h2>
+        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Projects</a>
+      </h2>
+      {% include projects.liquid %}
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
