@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="https://jaejae1107.github.io/projects/3_project/">Predicting EV Charging Demand(SAS Curiosity Cup)</a>
+<a href="https://jaejae1107.github.io/projects/EVcharge/">Predicting EV Charging Demand(SAS Curiosity Cup)</a>

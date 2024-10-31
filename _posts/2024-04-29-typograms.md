@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="https://jaejae1107.github.io/projects/2_project/">Fire-detecting Infrared Rescue and Evacuation System (FIRE)</a>
+<a href="https://jaejae1107.github.io/projects/FIRE/">Fire-detecting Infrared Rescue and Evacuation System (FIRE)</a>
