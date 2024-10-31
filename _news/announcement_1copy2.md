@@ -6,5 +6,3 @@ related_posts: false
 ---
 
 Joined the <a href="https://reneeyc6806.wixsite.com/orsol">SAS ORSOL Team</a> as an undergraduate researcher
-
-
