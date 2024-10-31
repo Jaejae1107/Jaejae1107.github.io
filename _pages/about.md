@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>408-505-4635</p>
     <p>Dublin, California</p>
     <p>Seoul, South Korea</p>
 
