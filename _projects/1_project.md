@@ -45,11 +45,11 @@ This project allowed me to design an interface that enhances Purdue students' ca
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/boiler-time-2.jpg" title="Interactive scheduling and community features" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/boiler-time-data.jpg" title="Secure data storage with Firebase" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/boiler-time-3.jpg" title="Seamless integration of essential student resources" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/boiler-time-security.jpg" title="Enhanced data security for student privacy" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
-Boiler Time exemplifies my commitment to enhancing user experience through intuitive design and robust features.
+Boiler Time prioritizes student data security and privacy, utilizing Firebase for secure data storage and management, ensuring all information is protected and readily accessible.
