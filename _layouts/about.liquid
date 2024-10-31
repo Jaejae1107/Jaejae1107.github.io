@@ -51,18 +51,11 @@ layout: default
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Projects</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
-
-    <!-- Projects -->
-    {% if site.projects %}
-      <h2>
-        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Projects</a>
-      </h2>
-      {% include projects.liquid %}
-    {% endif %}
+    
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
