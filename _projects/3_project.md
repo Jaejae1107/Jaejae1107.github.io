@@ -37,15 +37,16 @@ With the rapid growth in EV adoption, there’s a critical need for efficient ch
 
 - **Visualization and Analysis**: To validate model accuracy and forecasted demand, we created various heat maps and graphical representations of traffic patterns. These visuals enabled a deeper understanding of traffic flow variations and helped refine our predictions for charging demand.
 
-  <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
       {% include figure.liquid path="assets/img/visualization-analysis.jpg" title="Visualization of Traffic Flow and Forecasted Demand" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-md-6">
         {% include figure.liquid path="assets/img/predicted-traffic-heatmap.jpg" title="Predicted Traffic Flow Heat Map for 04-24-2018" class="img-fluid rounded z-depth-1" %}
     </div>
   </div>
-
+</div>
 ---
 
 ### Technical Stack
