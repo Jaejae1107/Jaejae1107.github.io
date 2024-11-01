@@ -29,14 +29,17 @@ With the rapid adoption of electric vehicles (EVs), demand forecasting for charg
   - **VAE (Variational Autoencoder)**: A probabilistic model that learns to compress and recreate data by encoding it into a latent space. The encoder compresses the input data, and the decoder reconstructs or generates new data from the latent space, maintaining essential features.
   - **ETS Model (Exponential Smoothing State Space)**: Selected for cases where deep learning models are unsupported by SAS Viya, providing trend and seasonality capture.
 
-  <div class="row justify-content-sm-center">
-    <div class="col-md-6">
-      {% include figure.liquid path="assets/img/timegan-diagram.jpg" title="TimeGAN Model Workflow" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-md-6">
-      {% include figure.liquid path="assets/img/ets-model-output.jpg" title="ETS Model Synthetic Data Output" class="img-fluid rounded z-depth-1" %}
-    </div>
+<!-- <div class="row justify-content-sm-center">
+  <div class="col-md-4">
+    {% include figure.liquid path="assets/img/timegan-diagram.jpg" title="TimeGAN Model Workflow" class="img-fluid rounded z-depth-1" %}
   </div>
+  <div class="col-md-4">
+    {% include figure.liquid path="assets/img/vae-model-workflow.jpg" title="VAE Model Workflow" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-md-4">
+    {% include figure.liquid path="assets/img/ets-model-output.jpg" title="ETS Model Synthetic Data Output" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div> -->
 
 - **Correlation Evaluation**:  
   We assess the quality of synthetic data by calculating feature-wise and time-wise correlations to ensure fidelity to the original dataset. This helps maintain key relationships and temporal dynamics in the data.
@@ -47,19 +50,19 @@ With the rapid adoption of electric vehicles (EVs), demand forecasting for charg
 - **Optimization Modeling**:  
   A Real-Time Pricing (RTP) model is implemented in SAS Viya to adjust charging prices dynamically, enhancing grid efficiency by distributing demand and promoting off-peak usage.
 
-### Weekly Progress Updates
+<!-- ### Weekly Progress Updates
 
-1. **TimeGAN Implementation**:  
+1. **TimeGAN Implementation**:
    Set up and configured TimeGAN for time-series data generation, addressing issues with module imports and ensuring compatibility in Google Colab.
 
-2. **ETS Model in SAS Viya**:  
+2. **ETS Model in SAS Viya**:
    Used the ETS model to generate synthetic data where deep learning models were unsupported, yielding expanded data for improved forecasting.
 
-3. **VAE Framework Development**:  
+3. **VAE Framework Development**:
    Constructed a VAE framework with an encoder, latent vectors, and a decoder to facilitate flexible data generation.
 
-4. **Challenges and Solutions**:  
-   Encountered compatibility issues with libraries, data type handling, and GPU resource limitations. Applied adjustments such as data type conversions and metadata updates for smooth model execution.
+4. **Challenges and Solutions**:
+   Encountered compatibility issues with libraries, data type handling, and GPU resource limitations. Applied adjustments such as data type conversions and metadata updates for smooth model execution. -->
 
 ---
 
