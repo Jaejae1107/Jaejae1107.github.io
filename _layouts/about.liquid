@@ -48,12 +48,12 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- projects -->
-    {% if site.projects.enabled %}
+    <!-- latest_post -->
+    {% if site.latest_post.enabled %}
       <h2>
         <a href="{{ '/projects/' | relative_url }}" style="color: inherit">Recent Projects</a>
       </h2>
-      {% include projects.liquid %}
+      {% include latest_post.liquid %}
     {% endif %}
 
     <!-- Social -->
