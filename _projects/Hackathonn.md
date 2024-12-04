@@ -77,8 +77,3 @@ Climate change intensifies the frequency and severity of extreme weather events,
 
 The project demonstrates how integrating climate and socioeconomic data can provide actionable insights to address the compounded challenges of climate change and economic vulnerability.
 
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/hackres.jpg" title="Sample County Analysis" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
