@@ -76,4 +76,3 @@ Climate change intensifies the frequency and severity of extreme weather events,
 ### Conclusion
 
 The project demonstrates how integrating climate and socioeconomic data can provide actionable insights to address the compounded challenges of climate change and economic vulnerability.
-
