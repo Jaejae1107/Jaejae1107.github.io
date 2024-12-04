@@ -1,50 +1,84 @@
 ---
 layout: page
-title: Synthetic Data Generation for EV Charging Demand Forecasting
-description: A project focused on overcoming data scarcity in EV infrastructure through synthetic data generation and machine learning.
-img: assets/img/operations_research_purdue_logo.jpg
-importance: 2
+title: Identifying Vulnerable Populations Amid Climate Change
+description: A SAS Hackathon project analyzing economic and climate vulnerability to support policy-making for at-risk communities.
+img: assets/img/hackintro.jpg
+importance: 1
 category: Research
 ---
 
-This project aims to address the lack of granular, publicly accessible data on EV charging demand by generating synthetic data to improve forecasting accuracy. This ongoing research project involves three main phases: **synthetic data generation**, **demand forecasting**, and **optimization modeling**.
+This project was developed for the **2024 SAS Hackathon** under the theme **"Vulnerable Populations vs. Climate Change."** Our team, ORSOL, tackled the overlapping crises of climate change and economic vulnerability, aiming to identify and support communities most at risk.
 
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/synthetic-data-overview.jpg" title="Overview of the Synthetic Data Generation Process" class="img-fluid rounded z-depth-1" %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      {% include figure.liquid path="assets/img/hackii1.jpg" title="hackimg1" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-md-6">
+        {% include figure.liquid path="assets/img/hackii2.jpg" title="hackimg2" class="img-fluid rounded z-depth-1" %}
+    </div>
   </div>
 </div>
+---
 
 **Abstract:**  
-With the rapid adoption of electric vehicles (EVs), demand forecasting for charging infrastructure is increasingly essential. Traditional models, reliant on historical data, are limited by data availability. Our project generates high-quality synthetic data using advanced models such as **Variational Autoencoders (VAEs)** and **TimeGAN** to replicate realistic EV charging patterns, providing a robust foundation for demand prediction models.
+Climate change intensifies the frequency and severity of extreme weather events, disproportionately affecting vulnerable populations such as low-income families, rural communities, the elderly, and marginalized groups. This project integrates climate and socioeconomic data to identify the top 50 U.S. counties most vulnerable to climate-related disasters, providing data-driven insights for policymakers to allocate resources effectively.
 
 ---
 
 ### Key Components
 
-- **Synthetic Data Generation**:  
-  We employ multiple approaches to create synthetic time-series data that reflects real-world EV charging behavior:
+- **Data Sources and Processing**:  
+  We analyzed multiple datasets to capture climate risks and economic vulnerability:
 
-  - **TimeGAN**: Focuses on generating time-dependent sequences by combining GANs with RNNs. This model captures both static and dynamic patterns in data.
-  - **VAE (Variational Autoencoder)**: A probabilistic model that learns to compress and recreate data by encoding it into a latent space. The encoder compresses the input data, and the decoder reconstructs or generates new data from the latent space, maintaining essential features.
-  - **ETS Model (Exponential Smoothing State Space)**: Selected for cases where deep learning models are unsupported by SAS Viya, providing trend and seasonality capture.
+  - **5th National Climate Assessment (NCA5)**: Provided climate projections and environmental impact data.
+  - **Social Vulnerability Index (SVI)**: Highlighted economic vulnerability and public health preparedness.
+  - **Bureau of Labor Statistics (BLS)**: Supplied local area unemployment statistics.
+  - **U.S. Census Bureau (SAIPE)**: Delivered small-area income and poverty estimates.
 
-- **Correlation Evaluation**:  
-  We assess the quality of synthetic data by calculating feature-wise and time-wise correlations to ensure fidelity to the original dataset. This helps maintain key relationships and temporal dynamics in the data.
+  Data cleaning involved addressing missing values, encoding issues, and removing rows with incomplete county information to prepare a high-quality dataset.
 
-- **Demand Forecasting with Machine Learning**:  
-  Utilizing CNNs and RNNs (LSTM and GRU layers), our demand prediction models capture short- and long-term dependencies in EV charging behavior. Hyperparameter tuning and preprocessing ensure model generalization and accuracy.
+- **Methodology**:  
+  A scoring system was implemented to rank counties based on risk factors:
 
-- **Optimization Modeling**:  
-  A Real-Time Pricing (RTP) model is implemented in SAS Viya to adjust charging prices dynamically, enhancing grid efficiency by distributing demand and promoting off-peak usage.
+  - **Preliminary Approach**: Ranked counties using raw variable values but found this method failed to capture variable interactions.
+  - **Revised Approach**:
+    - Constructed a correlation matrix to evaluate variable relationships.
+    - Developed a weighted scoring system assigning higher importance to critical factors.
+    - Applied MinMaxScaler in Python to normalize scores between 0–10.
+
+- **Visualization and Dashboard**:  
+  A **SAS-based interactive dashboard** demonstrates the analysis results, providing clear visualizations of county-level risk scores.
+
+---
+
+### Results and Policy Recommendations
+
+- **Findings**:  
+  The project identified the top 50 vulnerable counties, with key insights into their risk profiles:
+
+  - Example: **Phillips County, AR** (Score: 5.79/10) exhibited high heat extremes and poverty rates.
+  - **Barbour County, WV** (Score: 4.17/10) showed significant flood risks and poverty rates.
+
+- **Recommendations**:  
+  To mitigate risks and support affected communities, the following policies are proposed:
+  - **Invest in Resilient Infrastructure**: Strengthen flood defenses and heat-resistant buildings.
+  - **Economic Support Programs**: Offer job training and financial relief in vulnerable counties.
+  - **Healthcare and Disaster Response**: Improve healthcare facilities and emergency systems for climate-related crises.
 
 ---
 
 ### Technical Stack
 
-- **Models**: TimeGAN, VAE, ETS Model
-- **Platform**: Google Colab, SAS Viya for data generation and optimization modeling, Python
+- **Data Analysis Tools**: Python, SAS Viya
+- **Key Techniques**: Data cleaning, correlation matrix, weighted scoring, dashboard visualization
 
-### Current Status
+### Conclusion
 
-This research is still in progress, with ongoing model tuning and evaluation. No final results have been obtained yet.
+The project demonstrates how integrating climate and socioeconomic data can provide actionable insights to address the compounded challenges of climate change and economic vulnerability.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/hackres.jpg" title="Sample County Analysis" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>

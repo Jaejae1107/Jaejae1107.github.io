@@ -3,7 +3,7 @@ layout: page
 title: Synthetic Data Generation for EV Charging Demand Forecasting
 description: A project focused on overcoming data scarcity in EV infrastructure through synthetic data generation and machine learning.
 img: assets/img/operations_research_purdue_logo.jpg
-importance: 2
+importance: 3
 category: Research
 ---
 

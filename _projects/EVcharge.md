@@ -4,7 +4,7 @@ title: Predicting EV Charging Demand(SAS Curiosity Cup)
 description: A novel approach to forecasting EV charging demand through traffic data, achieving 2nd place in the SAS Curiosity Cup.
 img: /assets/img/ev-demand-background.jpg
 # redirect: https://unsplash.com
-importance: 1
+importance: 2
 category: Research
 ---
 
