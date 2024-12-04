@@ -7,7 +7,7 @@ importance: 1
 category: Research
 ---
 
-This project was developed for the **2024 SAS Hackathon** under the theme **"Vulnerable Populations vs. Climate Change."** Our team, ORSOL, tackled the overlapping crises of climate change and economic vulnerability, aiming to identify and support communities most at risk.
+This project was developed for the **2024 SAS Hackathon** under the theme **"Vulnerable Populations vs. Climate Change."** Our team, ORSOL, tackled the overlapping crises of climate change and economic vulnerability, aiming to identify and support communities most at risk. (Awarded **1st place in Data Analysis as Global Student Winner**, competing with 145 teams from 70 countries.)
 
 <div class="container">
   <div class="row justify-content-center">
