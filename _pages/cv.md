@@ -1,6 +1,6 @@
 ---
 layout: cv
-permalink: /assets/pdf/Jaewon_CV.pdf
+permalink: /assets/pdf/Jaewon_Cho_CV.pdf
 title: cv
 nav: true
 nav_order: 5
