@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-lang: en
+lang: ko
 kind: projects
 title: projects
-permalink: /projects/
+permalink: /ko/projects/
 ---

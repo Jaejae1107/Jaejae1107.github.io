@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-lang: en
+lang: ko
 kind: home
 title: about
-permalink: /
+permalink: /ko/
 ---

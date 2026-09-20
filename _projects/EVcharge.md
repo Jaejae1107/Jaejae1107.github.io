@@ -1,5 +1,8 @@
 ---
-layout: page
+lang: en
+kind: project
+project_id: EVcharge
+layout: portfolio
 title: Predicting EV Charging Demand(SAS Curiosity Cup)
 description: A novel approach to forecasting EV charging demand through traffic data, achieving 2nd place in the SAS Curiosity Cup.
 img: /assets/img/ev-demand-background.jpg

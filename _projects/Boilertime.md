@@ -1,5 +1,8 @@
 ---
-layout: page
+lang: en
+kind: project
+project_id: Boilertime
+layout: portfolio
 title: BOILER TIME
 description: Developing a student-centric scheduling and community app
 img: assets/img/boilertimepic.jpg

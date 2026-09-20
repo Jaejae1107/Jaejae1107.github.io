@@ -1,5 +1,8 @@
 ---
-layout: page
+lang: en
+kind: project
+project_id: FIRE
+layout: portfolio
 title: Fire-detecting Infrared Rescue and Evacuation System (FIRE)
 description: An advanced fire detection and rescue support system using infrared technology, machine learning, and cloud integration.
 img: assets/img/FIreprof.jpg

@@ -1,0 +1,388 @@
+{
+  "en": {
+    "name": "Jaewon Cho",
+    "title": "Jaewon Cho — Data, code & curiosity",
+    "description": "Jaewon Cho’s portfolio: data science, machine learning, and software engineering projects.",
+    "skip": "Skip to content",
+    "nav_work": "Work",
+    "nav_about": "About",
+    "nav_contact": "Contact",
+    "resume": "Résumé",
+    "eyebrow": "COMPUTER ENGINEERING × DATA SCIENCE",
+    "hero_one": "A curious mind.",
+    "hero_two": "A practical builder.",
+    "intro": "Hi, I’m Jaewon. I turn complex data into useful insights and build software that connects ideas to the real world.",
+    "view_work": "Explore my work",
+    "get_in_touch": "Get in touch",
+    "portrait": "Jaewon Cho in Yosemite National Park",
+    "photo_note": "Away from the screen, still exploring.",
+    "focus": "MY INTERESTS",
+    "focus_items": ["Data science", "Machine learning", "Software engineering"],
+    "selected": "Selected work",
+    "work_intro": "Research with a purpose. Software for people.",
+    "all": "All projects",
+    "research": "Research",
+    "personal": "Personal",
+    "read_project": "Explore project",
+    "about_label": "A LITTLE ABOUT ME",
+    "about_title": "Technical by training.\nCurious by nature.",
+    "about_body": "My background is in Computer Engineering at Purdue University. Through research with SAS ORSOL and a software engineering internship at Samsung Electronics, I’ve explored how data and well-built systems can solve practical problems.",
+    "about_personal": "Beyond code and datasets, you’ll find me on the basketball court or listening to music.",
+    "experience": "Experience & education",
+    "roles": [
+      {
+        "org": "SAS ORSOL",
+        "role": "Undergraduate research",
+        "body": "Synthetic data, electric vehicle charging demand, and large-scale data modeling."
+      },
+      {
+        "org": "Samsung Electronics",
+        "role": "Software engineering internship",
+        "body": "Backend systems and database development."
+      },
+      {
+        "org": "Purdue University",
+        "role": "Computer Engineering",
+        "body": "A foundation in engineering, research, and software development."
+      }
+    ],
+    "contact_label": "LET’S CONNECT",
+    "contact_title": "Good things start\nwith a conversation.",
+    "contact_body": "Interested in data, research, or building something useful? I’d love to hear from you.",
+    "email_label": "Send an email",
+    "footer": "Built with curiosity. Made to keep evolving.",
+    "back": "Back to projects",
+    "overview": "Overview",
+    "approach": "Approach & implementation",
+    "resources": "Resources",
+    "cv_title": "Experience, at a glance.",
+    "cv_body": "Download my résumé for more about my background, research, and engineering experience.",
+    "download": "Download résumé (PDF, English)",
+    "project_count": "projects",
+    "project_page_title": "Ideas, put into practice.",
+    "project_page_intro": "A collection of research and personal projects across data, machine learning, and software.",
+    "other_projects": "More to explore",
+    "original": "Full project archive (English)"
+  },
+  "ko": {
+    "name": "조재원",
+    "title": "조재원 — 데이터, 코드 그리고 호기심",
+    "description": "조재원의 포트폴리오. 데이터 사이언스, 머신러닝, 소프트웨어 엔지니어링 프로젝트를 소개합니다.",
+    "skip": "본문으로 바로가기",
+    "nav_work": "프로젝트",
+    "nav_about": "소개",
+    "nav_contact": "연락",
+    "resume": "이력서",
+    "eyebrow": "컴퓨터공학 × 데이터 사이언스",
+    "hero_one": "호기심으로 탐구하고,",
+    "hero_two": "기술로 구현합니다.",
+    "intro": "안녕하세요, 조재원입니다. 복잡한 데이터에서 의미 있는 인사이트를 찾고, 아이디어를 현실로 연결하는 소프트웨어를 만듭니다.",
+    "view_work": "프로젝트 살펴보기",
+    "get_in_touch": "연락하기",
+    "portrait": "요세미티 국립공원에서 촬영한 조재원의 사진",
+    "photo_note": "화면 밖에서도, 새로운 것을 찾아서.",
+    "focus": "관심 분야",
+    "focus_items": ["데이터 사이언스", "머신러닝", "소프트웨어 엔지니어링"],
+    "selected": "주요 프로젝트",
+    "work_intro": "문제를 탐구하는 연구, 사람을 위한 소프트웨어.",
+    "all": "전체",
+    "research": "연구",
+    "personal": "개인 프로젝트",
+    "read_project": "프로젝트 보기",
+    "about_label": "ABOUT ME",
+    "about_title": "공학을 바탕으로,\n호기심을 따라.",
+    "about_body": "Purdue University에서 컴퓨터공학을 공부하며 데이터와 소프트웨어로 현실의 문제를 해결하는 방법을 탐구했습니다. SAS ORSOL 연구팀에서는 데이터 모델링을, 삼성전자 소프트웨어 엔지니어링 인턴십에서는 백엔드 시스템과 데이터베이스 개발을 경험했습니다.",
+    "about_personal": "코드와 데이터를 잠시 내려놓을 때는 농구를 하거나 음악을 들으며 에너지를 얻습니다.",
+    "experience": "경험과 학력",
+    "roles": [
+      {
+        "org": "SAS ORSOL",
+        "role": "학부 연구",
+        "body": "합성 데이터 생성, 전기차 충전 수요 예측 및 대규모 데이터 모델링."
+      },
+      {
+        "org": "삼성전자",
+        "role": "소프트웨어 엔지니어링 인턴십",
+        "body": "백엔드 시스템 및 데이터베이스 개발."
+      },
+      {
+        "org": "Purdue University",
+        "role": "컴퓨터공학",
+        "body": "공학, 연구, 소프트웨어 개발을 아우르는 기반."
+      }
+    ],
+    "contact_label": "LET’S CONNECT",
+    "contact_title": "좋은 시작은,\n하나의 대화로부터.",
+    "contact_body": "데이터와 연구, 의미 있는 서비스를 만드는 일에 관심이 있으신가요? 편하게 연락해 주세요.",
+    "email_label": "이메일 보내기",
+    "footer": "호기심으로 만들고, 경험으로 채워갑니다.",
+    "back": "프로젝트 목록으로",
+    "overview": "프로젝트 소개",
+    "approach": "접근 방법과 구현",
+    "resources": "관련 자료",
+    "cv_title": "경험을 한눈에.",
+    "cv_body": "학력과 연구, 개발 경험에 대한 자세한 내용은 이력서에서 확인하실 수 있습니다.",
+    "download": "이력서 다운로드 (PDF, 영문)",
+    "project_count": "개의 프로젝트",
+    "project_page_title": "아이디어를 현실로.",
+    "project_page_intro": "데이터, 머신러닝, 소프트웨어를 연결하는 연구와 개인 프로젝트를 소개합니다.",
+    "other_projects": "다른 프로젝트",
+    "original": "전체 프로젝트 기록 (영문)"
+  },
+  "projects": [
+    {
+      "id": "Hackathonn",
+      "category": "research",
+      "theme": "climate",
+      "tags": ["Python", "SAS Viya", "Data analysis"],
+      "image": "hackintro.jpg",
+      "en": {
+        "title": "Mapping climate vulnerability",
+        "subtitle": "SAS HACKATHON · 2024",
+        "summary": "Connecting climate and socioeconomic data to identify the communities most at risk.",
+        "badge": "Global Student Winner",
+        "overview": "For the 2024 SAS Hackathon, our ORSOL team studied the intersection of climate change and economic vulnerability. The project identified the 50 U.S. counties most vulnerable to climate-related disasters and received the Global Student Winner award.",
+        "sections": [
+          {
+            "title": "Bringing the data together",
+            "body": "Combined the Fifth National Climate Assessment, Social Vulnerability Index, BLS unemployment data, and Census poverty estimates. Cleaning addressed missing values, encoding issues, and incomplete county records."
+          },
+          {
+            "title": "From variables to risk scores",
+            "body": "Evaluated correlations, weighted key risk factors, and normalized scores with Python’s MinMaxScaler. A SAS dashboard visualized county-level risk to help interpret the results."
+          },
+          {
+            "title": "Insights for policy",
+            "body": "The analysis supported recommendations for resilient infrastructure, economic support, healthcare, and disaster response in vulnerable communities."
+          }
+        ]
+      },
+      "ko": {
+        "title": "기후 취약성을 데이터로 읽다",
+        "subtitle": "SAS HACKATHON · 2024",
+        "summary": "기후·사회경제 데이터를 연결해 재난에 가장 취약한 지역사회를 분석했습니다.",
+        "badge": "글로벌 학생 부문 우승",
+        "overview": "2024 SAS Hackathon에서 ORSOL 팀과 함께 기후변화와 경제적 취약성이 겹치는 문제를 분석했습니다. 기후 재난에 취약한 미국 내 50개 카운티를 식별했으며, 글로벌 학생 부문 우승을 수상했습니다.",
+        "sections": [
+          {
+            "title": "서로 다른 데이터 연결하기",
+            "body": "제5차 국가기후평가, 사회취약성지수, 미국 노동통계국의 실업 데이터, 인구조사국의 빈곤 추정치를 통합했습니다. 결측값과 인코딩 오류, 불완전한 카운티 정보를 정리했습니다."
+          },
+          {
+            "title": "변수에서 위험 점수로",
+            "body": "변수 간 상관관계를 분석하고 주요 위험 요인에 가중치를 부여했습니다. Python의 MinMaxScaler로 점수를 정규화하고 SAS 대시보드로 지역별 위험을 시각화했습니다."
+          },
+          {
+            "title": "정책으로 이어지는 인사이트",
+            "body": "취약 지역의 회복력 있는 기반시설, 경제적 지원, 의료 서비스 및 재난 대응 역량 강화를 위한 정책 방향을 제안했습니다."
+          }
+        ]
+      },
+      "links": []
+    },
+    {
+      "id": "EVcharge",
+      "category": "research",
+      "theme": "ev",
+      "tags": ["Time series", "SAS", "Forecasting"],
+      "image": "ev-demand-background.jpg",
+      "en": {
+        "title": "Anticipating EV charging demand",
+        "subtitle": "SAS CURIOSITY CUP · 2024",
+        "summary": "Using traffic patterns to forecast charging demand when station-level data is scarce.",
+        "badge": "2nd place · Data Analysis",
+        "overview": "Our SAS Curiosity Cup project forecast EV charging demand from traffic flow, earning second place in Data Analysis in a competition with 107 teams from 19 countries.",
+        "sections": [
+          {
+            "title": "An indirect signal",
+            "body": "Processed more than 700 days of Caltrans PeMS traffic data from California’s I210 corridor. Traffic flow provided an alternative to unavailable granular charging-station data."
+          },
+          {
+            "title": "A forecasting pipeline",
+            "body": "Compared ARIMAX, exponential smoothing, and neural-network models in SAS Forecast Studio. Selected a stacked neural-network and time-series model to balance accuracy and computational efficiency."
+          },
+          {
+            "title": "Estimating charging needs",
+            "body": "Combined vehicle exit rates, traffic volume, and EV ratios in a three-step estimation approach. Heatmaps and visual analysis helped assess traffic patterns and forecast demand."
+          }
+        ]
+      },
+      "ko": {
+        "title": "전기차 충전 수요를 예측하다",
+        "subtitle": "SAS CURIOSITY CUP · 2024",
+        "summary": "충전소 데이터가 부족한 상황에서 교통 흐름으로 충전 수요를 예측했습니다.",
+        "badge": "데이터 분석 부문 2위",
+        "overview": "교통량 데이터를 활용한 전기차 충전 수요 예측 프로젝트입니다. 19개국 107개 팀이 참여한 SAS Curiosity Cup에서 데이터 분석 부문 2위를 수상했습니다.",
+        "sections": [
+          {
+            "title": "교통량이라는 간접 신호",
+            "body": "캘리포니아 I210 구간의 Caltrans PeMS 교통 데이터 700일 이상을 처리했습니다. 공개되지 않은 세부 충전소 이용 데이터를 교통 흐름으로 보완했습니다."
+          },
+          {
+            "title": "예측 파이프라인 구축",
+            "body": "SAS Forecast Studio에서 ARIMAX, 지수평활, 신경망 모델을 비교했습니다. 예측 정확도와 계산 효율성을 고려해 신경망과 시계열을 결합한 스태킹 모델을 선택했습니다."
+          },
+          {
+            "title": "충전 수요 추정",
+            "body": "차량 진출 비율, 교통량, 전기차 비율을 반영한 3단계 추정 방법을 구성했습니다. 히트맵과 시각화로 교통 패턴을 분석하고 예측 결과를 검토했습니다."
+          }
+        ]
+      },
+      "links": [
+        {
+          "en": "Project report (PDF)",
+          "ko": "프로젝트 보고서 (영문 PDF)",
+          "url": "/assets/pdf/The%20Curiosity%20Cup%20Challenge%20-%202024.pdf"
+        },
+        {
+          "en": "Presentation",
+          "ko": "발표 영상",
+          "url": "https://drive.google.com/file/d/1DMhQXusxH984wqGK-CzVcuGfbRKRSVd0/view"
+        }
+      ]
+    },
+    {
+      "id": "Synthetic",
+      "category": "research",
+      "theme": "synthetic",
+      "tags": ["Python", "TimeGAN", "VAE"],
+      "image": "synthetic-data-overview.jpg",
+      "en": {
+        "title": "Making data where it’s missing",
+        "subtitle": "SAS ORSOL · RESEARCH",
+        "summary": "Exploring synthetic time-series data for EV demand forecasting and optimization.",
+        "badge": "Synthetic data research",
+        "overview": "This research explores synthetic data as a response to scarce public EV charging data. The workflow spans data generation, demand forecasting, and optimization; the original project record reports model tuning and evaluation without final results.",
+        "sections": [
+          {
+            "title": "Generating realistic sequences",
+            "body": "Explored TimeGAN, variational autoencoders, and exponential smoothing to reproduce temporal charging patterns. Feature-wise and time-wise correlations assess how well synthetic data preserves the original relationships."
+          },
+          {
+            "title": "Forecasting and optimization",
+            "body": "Investigated CNNs and recurrent models using LSTM and GRU layers for demand forecasting. A real-time pricing model in SAS Viya explores distributing demand and encouraging off-peak charging."
+          }
+        ]
+      },
+      "ko": {
+        "title": "부족한 데이터를 만드는 연구",
+        "subtitle": "SAS ORSOL · RESEARCH",
+        "summary": "합성 시계열 데이터로 전기차 수요 예측과 최적화의 가능성을 탐구했습니다.",
+        "badge": "합성 데이터 연구",
+        "overview": "전기차 충전 데이터의 부족을 합성 데이터로 보완하는 연구입니다. 데이터 생성, 수요 예측, 최적화 모델링의 흐름을 다루며, 기존 연구 기록은 최종 결과 없이 모델 튜닝과 평가 단계로 정리되어 있습니다.",
+        "sections": [
+          {
+            "title": "현실적인 시계열 생성",
+            "body": "TimeGAN, 변이형 오토인코더(VAE), 지수평활 모델로 시간에 따른 충전 패턴을 재현하는 방법을 탐구했습니다. 변수별·시간별 상관관계로 원본 데이터의 특성이 유지되는지 평가했습니다."
+          },
+          {
+            "title": "수요 예측과 최적화",
+            "body": "CNN과 LSTM·GRU 기반 순환 신경망을 활용한 수요 예측을 연구했습니다. SAS Viya의 실시간 가격 모델로 수요를 분산하고 비혼잡 시간대 충전을 유도하는 방안을 탐구했습니다."
+          }
+        ]
+      },
+      "links": []
+    },
+    {
+      "id": "Boilertime",
+      "category": "personal",
+      "theme": "boiler",
+      "tags": ["Flutter", "Dart", "Firebase"],
+      "image": "boilertimepic.jpg",
+      "en": {
+        "title": "Boiler Time",
+        "subtitle": "A BETTER CAMPUS EXPERIENCE",
+        "summary": "A student-centered app bringing schedules, community, and campus essentials together.",
+        "badge": "Built for Purdue students",
+        "overview": "Boiler Time brings scheduling and community features into a single app for Purdue students, helping them stay organized and connected to campus life.",
+        "sections": [
+          {
+            "title": "Schedules that make sense",
+            "body": "Designed and developed a calendar interface for managing academic and personal tasks."
+          },
+          {
+            "title": "A connected campus",
+            "body": "Built anonymous posting and commenting across community categories. Integrated library hours, dining menus, bus schedules, and academic calendars using Google Firebase, with a Flutter and Dart frontend."
+          }
+        ]
+      },
+      "ko": {
+        "title": "Boiler Time",
+        "subtitle": "더 편리한 캠퍼스 생활",
+        "summary": "일정 관리, 커뮤니티, 캠퍼스 정보를 하나로 연결한 학생 중심 앱입니다.",
+        "badge": "Purdue 학생을 위한 앱",
+        "overview": "Purdue 학생들이 일정을 관리하고 캠퍼스 생활에 참여할 수 있도록, 일정 관리와 커뮤니티 기능을 하나의 앱으로 구성했습니다.",
+        "sections": [
+          {
+            "title": "한눈에 보는 일정",
+            "body": "학업과 개인 일정을 효율적으로 관리할 수 있는 캘린더 인터페이스를 설계하고 개발했습니다."
+          },
+          {
+            "title": "연결되는 캠퍼스",
+            "body": "다양한 카테고리에서 익명으로 글과 댓글을 남길 수 있는 커뮤니티를 구현했습니다. Flutter와 Dart로 화면을 구성하고 Google Firebase를 활용해 도서관 운영시간, 식단, 버스 시간표, 학사일정을 통합했습니다."
+          }
+        ]
+      },
+      "links": [
+        {
+          "en": "View on GitHub",
+          "ko": "GitHub에서 보기",
+          "url": "https://github.com/Jaejae1107/Boiler-time"
+        }
+      ]
+    },
+    {
+      "id": "FIRE",
+      "category": "personal",
+      "theme": "fire",
+      "tags": ["Computer vision", "Infrared", "Cloud"],
+      "image": "FIreprof.jpg",
+      "en": {
+        "title": "FIRE: technology for rescue",
+        "subtitle": "FIRE DETECTION & RESCUE CONCEPT",
+        "summary": "An infrared and machine-learning system concept to support safer emergency response.",
+        "badge": "Engineering concept",
+        "overview": "Developed for an industrial engineering competition in Korea, FIRE proposes a fire detection and rescue support system using infrared cameras, machine learning, and cloud connectivity. The visuals illustrate a concept and potential deployment, not a verified production system.",
+        "sections": [
+          {
+            "title": "Situational awareness",
+            "body": "The design uses infrared cameras in heat-resistant PBI casings to locate people and detect fire. Computer vision and cloud communication aim to relay indoor conditions to rescue teams."
+          },
+          {
+            "title": "Resilience by design",
+            "body": "A thermoelectric generator is proposed to power the system from ambient heat during outages. The goal is to reduce rescue delays and improve firefighter awareness of conditions inside a building."
+          }
+        ]
+      },
+      "ko": {
+        "title": "FIRE: 구조를 돕는 기술",
+        "subtitle": "화재 감지·구조 지원 시스템 구상",
+        "summary": "적외선과 머신러닝으로 더 안전한 재난 대응을 돕는 시스템을 구상했습니다.",
+        "badge": "공학 설계 콘셉트",
+        "overview": "국내 산업공학 경진대회를 위해 적외선 카메라, 머신러닝, 클라우드 연결을 활용한 화재 감지 및 구조 지원 시스템을 제안했습니다. 이미지는 시스템 콘셉트와 적용 가능성을 설명하며, 실제 운영이 검증된 제품을 의미하지 않습니다.",
+        "sections": [
+          {
+            "title": "현장 상황을 파악하는 기술",
+            "body": "내열성 PBI 케이스에 적외선 카메라를 배치해 화재와 실내 인원 위치를 탐지하도록 설계했습니다. 컴퓨터 비전과 클라우드 통신으로 구조대에 실내 상황을 전달하는 구상입니다."
+          },
+          {
+            "title": "재난 상황을 고려한 설계",
+            "body": "정전 시에도 주변 열로 전력을 생산하는 열전 발전기를 제안했습니다. 구조 지연을 줄이고 소방관의 실내 상황 파악을 돕는 것을 목표로 했습니다."
+          }
+        ]
+      },
+      "links": [
+        {
+          "en": "Blueprint (PDF)",
+          "ko": "설계도 (PDF)",
+          "url": "/assets/pdf/Blueprint.pdf"
+        },
+        {
+          "en": "Project description (PDF)",
+          "ko": "프로젝트 설명 (PDF)",
+          "url": "/assets/pdf/Description.pdf"
+        }
+      ]
+    }
+  ]
+}

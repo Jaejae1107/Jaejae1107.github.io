@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-lang: en
+lang: ko
 kind: cv
 title: cv
-permalink: /cv/
+permalink: /ko/cv/
 ---

@@ -1,5 +1,8 @@
 ---
-layout: page
+lang: en
+kind: project
+project_id: Hackathonn
+layout: portfolio
 title: Identifying Vulnerable Populations Amid Climate Change
 description: A SAS Hackathon project analyzing economic and climate vulnerability to support policy-making for at-risk communities.
 img: assets/img/hackintro.jpg
