@@ -26,6 +26,8 @@ bundle exec jekyll serve
 
 The check verifies 16 routes, English/Korean content parity, page language, heading structure, alternate-language links, local resources, and the résumé PDF signature. It also runs after the Jekyll build in the existing deploy workflow.
 
-## Content note
+## Presentation and content
 
-The biography uses the existing Purdue, SAS ORSOL, and Samsung experience without asserting a current affiliation or graduation date. Confirm current education, employment, and the contact email before publishing an updated professional profile. No new employment or education claims were added.
+The homepage uses a restrained GitHub README-style layout: a name and professional focus, introductory paragraphs, a dated Professional Journey table, interests, and compact project links. System fonts, a white background, simple borders, and print styles keep the page useful for workplace introductions and presentation handouts.
+
+English biography and journey entries follow the supplied professional profile; Korean text is maintained alongside them. Current work is described as semiconductor-industry analytics without naming an unconfirmed employer or job title. The homepage does not display education, graduation dates, or residence. The legacy résumé PDF remains available at its original URL but is no longer promoted in the navigation. `/cv/` and `/ko/cv/` show the updated Professional Journey.

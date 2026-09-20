@@ -23,7 +23,7 @@
       {{ t.title }}
     </title>
     <meta name="description" content="{% if detail %}{{ detail.summary | escape }}{% else %}{{ t.description | escape }}{% endif %}">
-    <meta name="theme-color" content="#f6f7f9">
+    <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     <link rel="alternate" hreflang="en" href="{{ english_path | absolute_url }}">
     <link rel="alternate" hreflang="ko" href="{{ korean_path | absolute_url }}">
@@ -41,226 +41,118 @@
   <body>
     <a class="skip-link" href="#main">{{ t.skip }}</a>
     <header class="site-header wrap">
-      <a class="brand" href="{{ home | relative_url }}" aria-label="{{ t.name }}"
-        ><span class="brand-mark">j<span>.</span></span
-        ><span>Jaewon Cho<span class="brand-dot">.</span></span></a
-      >
+      <a class="brand" href="{{ home | relative_url }}">Jaewon Cho</a>
       <nav aria-label="{% if lang == 'ko' %}주 메뉴{% else %}Main navigation{% endif %}">
-        <a href="{{ home | relative_url }}#work">{{ t.nav_work }}</a>
         <a href="{{ home | relative_url }}#about">{{ t.nav_about }}</a>
-        <a href="{{ home | relative_url }}#contact">{{ t.nav_contact }}</a>
+        <a href="{{ home | relative_url }}#journey">{{ t.nav_journey }}</a>
+        <a href="{{ home | relative_url }}#work">{{ t.nav_work }}</a>
       </nav>
-      <div class="header-actions">
-        <div class="language-switch" aria-label="{% if lang == 'ko' %}언어 선택{% else %}Language{% endif %}">
-          <a
-            href="{{ english_path | relative_url }}"
-            lang="en"
-            hreflang="en"
-            {% if lang == 'en' %}
-              aria-current="page"
-            {% endif %}
-            >EN</a
-          >
-          <a
-            href="{{ korean_path | relative_url }}"
-            lang="ko"
-            hreflang="ko"
-            {% if lang == 'ko' %}
-              aria-current="page"
-            {% endif %}
-            >KO</a
-          >
-        </div>
-        <a class="resume-link" href="{{ home | append: 'cv/' | relative_url }}">
-          {{- t.resume }}
-          <span aria-hidden="true">↗</span></a
+      <div class="language-switch" aria-label="{% if lang == 'ko' %}언어 선택{% else %}Language{% endif %}">
+        <a
+          href="{{ english_path | relative_url }}"
+          lang="en"
+          hreflang="en"
+          {% if lang == 'en' %}
+            aria-current="page"
+          {% endif %}
+          >EN</a
+        >
+        <span aria-hidden="true">/</span>
+        <a
+          href="{{ korean_path | relative_url }}"
+          lang="ko"
+          hreflang="ko"
+          {% if lang == 'ko' %}
+            aria-current="page"
+          {% endif %}
+          >한국어</a
         >
       </div>
     </header>
-    <main id="main">
+    <main id="main" class="wrap document">
       {% if page.kind == 'home' %}
-        <section class="hero wrap" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>{{ t.eyebrow }}</p>
-            <h1 id="hero-title">
-              {{ t.hero_one -}}
-              <br>
-              <span>{{ t.hero_two }}</span>
-            </h1>
-            <p class="hero-intro">{{ t.intro }}</p>
-            <div class="hero-actions">
-              <a class="button primary" href="#work">
-                {{- t.view_work }}
-                <span aria-hidden="true">↗</span></a
-              ><a class="text-link" href="#contact">
-                {{- t.get_in_touch }}
-                <span aria-hidden="true">↗</span></a
-              >
-            </div>
-            <div class="hero-footnote"><span>01 /</span> DATA. CODE. CURIOSITY.</div>
-          </div>
-          <figure class="portrait">
-            <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="{{ t.portrait }}" width="2902" height="3597" fetchpriority="high">
-            <div class="portrait-label" aria-hidden="true">
-              <span>HELLO, I’M</span
-              ><strong>
-                {%- if lang == 'ko' %}재원{% else %}Jaewon{% endif -%}
-                <span class="hand-drawn">↗</span></strong
-              >
-            </div>
-            <figcaption><span class="small-cross" aria-hidden="true">✳</span>{{ t.photo_note }}</figcaption>
-          </figure>
-        </section>
-        <div class="focus-strip wrap">
-          <span class="eyebrow">{{ t.focus }}</span>
-          {%- for focus in t.focus_items -%}
-            <span>{{ focus }}</span>
-            {%- unless forloop.last -%}
-              <span class="separator" aria-hidden="true">✳</span>
-            {%- endunless -%}
-          {%- endfor %}
-        </div>
-      {% endif %}
-      {% if page.kind == 'home' or page.kind == 'projects' %}
-        <section class="work-section wrap" id="work" aria-labelledby="work-title">
-          <div class="section-heading">
+        <section id="about" aria-labelledby="profile-title">
+          <div class="profile-heading">
             <div>
-              <p class="eyebrow">
-                01 — {% if lang == 'ko' %}프로젝트{% else %}SELECTED WORK{% endif %}
-              </p>
-              <{% if page.kind == 'projects' %}h1{% else %}h2{% endif %} id="work-title">
-                {%- if page.kind == 'home' -%}
-                  {{- t.selected -}}
-                  <span class="blue">.</span>
-                {%- else -%}
-                  {{- t.project_page_title -}}
-                {%- endif -%}
-              </{% if page.kind == 'projects' %}h1{% else %}h2{% endif %}>
-              <p class="muted">
-                {% if page.kind == 'home' %}{{ t.work_intro }}{% else %}{{ t.project_page_intro }}{% endif %}
-              </p>
+              <h1 id="profile-title">Jaewon Cho</h1>
+              <p class="subtitle">Data · AI · Engineering</p>
             </div>
-            <span class="section-index">( 05 )</span>
+            <img class="profile-photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="{{ t.portrait }}" width="100" height="112">
           </div>
-          <div class="filters" hidden aria-label="{% if lang == 'ko' %}프로젝트 필터{% else %}Project filters{% endif %}">
-            <button type="button" data-filter="all" aria-pressed="true">
-              {{ t.all }}
-              <span>05</span></button
-            ><button type="button" data-filter="research" aria-pressed="false">
-              {{ t.research }}
-              <span>03</span></button
-            ><button type="button" data-filter="personal" aria-pressed="false">
-              {{ t.personal }}
-              <span>02</span>
-            </button>
-          </div>
-          <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
-          <div class="project-grid">
-            {% for project in site.data.portfolio.projects %}
-              {% assign detail = project[lang] %}
-              <article class="project-card" data-category="{{ project.category }}">
-                <a class="project-card-link" href="{{ home | append: 'projects/' | append: project.id | append: '/' | relative_url }}">
-                  <div class="project-visual {{ project.theme }}" aria-hidden="true">
-                    <span class="visual-top">{{ detail.subtitle }}</span>
-                    {% case project.theme %}
-                      {% when 'climate' %}
-                        <div class="climate-grid">
-                          {% for i in (1..80) -%}
-                            <i></i>
-                          {%- endfor %}
-                        </div>
-                        <div class="visual-title">
-                          CLIMATE<br>
-                          <em>× COMMUNITY</em>
-                        </div>
-                        <span class="visual-bottom">RISK → INSIGHT → ACTION</span>
-                      {% when 'ev' %}
-                        <div class="ev-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                        <div class="visual-title">
-                          CHARGING<br>
-                          <em>THE FUTURE.</em>
-                        </div>
-                        <span class="visual-bottom">TRAFFIC → FORECAST → DEMAND</span>
-                      {% when 'synthetic' %}
-                        <div class="data-orbits"><i></i><i></i><i></i></div>
-                        <div class="visual-title">
-                          REAL PATTERNS.<br>
-                          <em>NEW DATA.</em>
-                        </div>
-                        <span class="visual-bottom">SYNTHETIC TIME SERIES</span>
-                      {% when 'boiler' %}
-                        <div class="mini-calendar">
-                          <span>M T W T F</span>
-                          <div>
-                            {% for i in (1..15) -%}
-                              <i>{{ i }}</i>
-                            {%- endfor %}
-                          </div>
-                        </div>
-                        <div class="visual-title">
-                          CAMPUS LIFE,<br>
-                          <em>CONNECTED.</em>
-                        </div>
-                        <span class="visual-bottom">BOILER TIME / FLUTTER APP</span>
-                      {% when 'fire' %}
-                        <div class="fire-radar"><i></i><i></i><i></i></div>
-                        <div class="visual-title">
-                          SEE THROUGH.<br>
-                          <em>REACH SAFER.</em>
-                        </div>
-                        <span class="visual-bottom">FIRE / RESCUE SYSTEM CONCEPT</span>
-                    {% endcase %}
-                    <span class="card-arrow">↗</span>
-                  </div>
-                  <div class="project-copy">
-                    <p class="project-badge">{{ detail.badge }}</p>
-                    <h3>{{ detail.title }}</h3>
-                    <p>{{ detail.summary }}</p>
-                    <div class="tags">
-                      {% for tag in project.tags -%}
-                        <span>{{ tag }}</span>
-                      {%- endfor %}
-                    </div>
-                    <span class="sr-only">{{ t.read_project }}</span>
-                  </div>
-                </a>
-              </article>
+          <div class="biography">
+            {% for paragraph in t.bio %}
+              <p>{{ paragraph }}</p>
             {% endfor %}
           </div>
         </section>
       {% endif %}
       {% if page.kind == 'home' or page.kind == 'cv' %}
-        <section class="about-section wrap" id="about" aria-labelledby="about-title">
-          <div class="about-copy">
-            <p class="eyebrow">02 — {{ t.about_label }}</p>
-            <{% if page.kind == 'cv' %}h1{% else %}h2{% endif %} id="about-title">
-              {%- if page.kind == 'cv' %}{{ t.cv_title }}{% else %}{{ t.about_title | newline_to_br }}{% endif -%}
-            </{% if page.kind == 'cv' %}h1{% else %}h2{% endif %}>
-            <p>{{ t.about_body }}</p>
-            <p>{{ t.about_personal }}</p>
-            <a class="text-link" href="{{ '/assets/pdf/Jaewon_Cho_CV.pdf' | relative_url }}">
-              {{- t.download }}
-              <span aria-hidden="true">↗</span></a
-            >
+        <section id="journey" aria-labelledby="journey-title">
+          <{% if page.kind == 'cv' %}h1{% else %}h2{% endif %} id="journey-title">
+            {{- t.journey_title -}}
+          </{% if page.kind == 'cv' %}h1{% else %}h2{% endif %}>
+          <table class="journey-table">
+            <thead>
+              <tr>
+                <th scope="col">{{ t.date_label }}</th>
+                <th scope="col">{{ t.highlight_label }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in t.journey %}
+                <tr>
+                  <th scope="row">{{ item.date }}</th>
+                  <td>{{ item.text }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </section>
+      {% endif %}
+      {% if page.kind == 'home' %}
+        <section id="interests" aria-labelledby="interests-title">
+          <h2 id="interests-title">{{ t.interests_title }}</h2>
+          <dl class="interests-list">
+            {% for item in t.interests %}
+              <div>
+                <dt>{{ item.title }}</dt>
+                <dd>{{ item.body }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </section>
+      {% endif %}
+      {% if page.kind == 'home' or page.kind == 'projects' %}
+        <section id="work" aria-labelledby="work-title">
+          <{% if page.kind == 'projects' %}h1{% else %}h2{% endif %} id="work-title">
+            {%- if page.kind == 'home' %}{{ t.selected }}{% else %}{{ t.project_page_title }}{% endif -%}
+          </{% if page.kind == 'projects' %}h1{% else %}h2{% endif %}>
+          <p class="section-intro">{{ t.work_intro }}</p>
+          <div class="filters" hidden aria-label="{% if lang == 'ko' %}프로젝트 필터{% else %}Project filters{% endif %}">
+            <button type="button" data-filter="all" aria-pressed="true">{{ t.all }}</button
+            ><button type="button" data-filter="research" aria-pressed="false">{{ t.research }}</button
+            ><button type="button" data-filter="personal" aria-pressed="false">{{ t.personal }}</button>
           </div>
-          <div class="experience">
-            <h3 class="eyebrow">{{ t.experience }}</h3>
-            {% for role in t.roles %}
-              <article class="experience-row">
-                <span class="experience-number">0{{ forloop.index }}</span>
-                <div>
-                  <h3>{{ role.org }}</h3>
-                  <p class="role">{{ role.role }}</p>
-                  <p>{{ role.body }}</p>
-                </div>
-                <span aria-hidden="true">↗</span>
+          <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+          <div class="project-list">
+            {% for project in site.data.portfolio.projects -%}
+              {%- assign item = project[lang] %}
+              <article class="project-card" data-category="{{ project.category }}">
+                <h3>
+                  <a href="{{ home | append: 'projects/' | append: project.id | append: '/' | relative_url }}">{{ item.title }}</a>
+                </h3>
+                <p>{{ item.summary }}</p>
+                <p class="project-meta">
+                  {{ item.badge }}
+                  <span aria-hidden="true">·</span> {{ project.tags | join: ', ' }}
+                </p>
               </article>
             {% endfor %}
           </div>
         </section>
       {% endif %}
       {% if page.kind == 'project' %}
-        <article class="project-detail wrap">
+        <article class="project-detail">
           <a class="text-link back-link" href="{{ home | append: 'projects/' | relative_url }}">← {{ t.back }}</a>
           <p class="eyebrow">{{ detail.subtitle }}</p>
           <h1>{{ detail.title }}</h1>
@@ -312,24 +204,15 @@
           </div>
         </article>
       {% endif %}
-      <section class="contact-section wrap" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">03 — {{ t.contact_label }}</p>
-          <h2 id="contact-title">{{ t.contact_title | newline_to_br }}</h2>
-          <p>{{ t.contact_body }}</p>
-        </div>
-        <a class="contact-button" href="mailto:{{ site.email }}" aria-label="{{ t.email_label }}"><span aria-hidden="true">↗</span></a>
-        <div class="contact-links">
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a><a href="https://github.com/Jaejae1107">GitHub ↗</a
-          ><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn ↗</a>
-        </div>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">{{ t.contact_title }}</h2>
+        <ul class="contact-links">
+          <li><a href="mailto:{{ site.email }}">Email</a></li>
+          <li><a href="https://github.com/Jaejae1107">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a></li>
+        </ul>
       </section>
     </main>
-    <footer class="wrap site-footer">
-      <span
-        >© {{ site.time | date: '%Y' }}
-        {{ t.name -}}</span
-      ><span>{{ t.footer }}</span><a href="#main" aria-label="{% if lang == 'ko' %}맨 위로{% else %}Back to top{% endif %}">↑</a>
-    </footer>
+    <footer class="wrap site-footer">© {{ site.time | date: '%Y' }} Jaewon Cho</footer>
   </body>
 </html>
