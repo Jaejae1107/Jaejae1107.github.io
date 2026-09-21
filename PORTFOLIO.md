@@ -1,6 +1,6 @@
 # Bilingual portfolio
 
-The existing Jekyll / GitHub Pages deployment is retained. The portfolio uses a standalone layout with English at `/` and Korean at `/ko/`. Both languages have project indexes, five project detail pages, and résumé landing pages. Original English project records remain available in an expandable archive on each English detail page. The existing résumé PDF remains in English and is labeled accordingly.
+The existing Jekyll / GitHub Pages deployment is retained. The portfolio uses a standalone layout with English at `/` and Korean at `/ko/`. Both languages have project indexes, five project detail pages, résumé landing pages, and Detail pages with a portrait, brief biography, and hobbies. Original English project records remain available in an expandable archive on each English detail page. The existing résumé PDF remains in English and is labeled accordingly.
 
 ## Editing
 
@@ -24,7 +24,7 @@ python3 bin/check_portfolio.py
 bundle exec jekyll serve
 ```
 
-The check verifies 16 routes, English/Korean content parity, page language, heading structure, alternate-language links, local resources, and the résumé PDF signature. It also runs after the Jekyll build in the existing deploy workflow.
+The check verifies 18 routes, English/Korean content parity, page language, heading structure, alternate-language links, local resources, and the résumé PDF signature. It also runs after the Jekyll build in the existing deploy workflow.
 
 ## Presentation and content
 

@@ -7,6 +7,7 @@
 {% assign english_path = '/' %}
 {% if page.kind == 'projects' %}{% assign english_path = '/projects/' %}{% endif %}
 {% if page.kind == 'cv' %}{% assign english_path = '/cv/' %}{% endif %}
+{% if page.kind == 'detail' %}{% assign english_path = '/detail/' %}{% endif %}
 {% if page.kind == 'project' %}
   {% assign project = site.data.portfolio.projects | where: 'id', page.project_id | first %}
   {% assign detail = project[lang] %}
@@ -32,7 +33,7 @@
     <meta property="og:title" content="{% if detail %}{{ detail.title | escape }} — {% endif %}{{ t.title | escape }}">
     <meta property="og:description" content="{% if detail %}{{ detail.summary | escape }}{% else %}{{ t.description | escape }}{% endif %}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:image" content="{{ '/assets/img/prof_pic.jpg' | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/img/jaewon-cho.jpg' | absolute_url }}">
     <meta property="og:locale" content="{% if lang == 'ko' %}ko_KR{% else %}en_US{% endif %}">
     <link rel="icon" href="{{ '/assets/img/portfolio-mark.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
@@ -46,6 +47,14 @@
         <a href="{{ home | relative_url }}#about">{{ t.nav_about }}</a>
         <a href="{{ home | relative_url }}#journey">{{ t.nav_journey }}</a>
         <a href="{{ home | relative_url }}#work">{{ t.nav_work }}</a>
+        <a
+          href="{{ home | append: 'detail/' | relative_url }}"
+          {% if page.kind == 'detail' %}
+            aria-current="page"
+          {% endif %}
+        >
+          {{- t.nav_detail -}}
+        </a>
       </nav>
       <div class="language-switch" aria-label="{% if lang == 'ko' %}언어 선택{% else %}Language{% endif %}">
         <a
@@ -70,6 +79,35 @@
       </div>
     </header>
     <main id="main" class="wrap document">
+      {% if page.kind == 'detail' %}
+        <section class="personal-detail" aria-labelledby="detail-title">
+          <h1 id="detail-title">{{ t.detail_title }}</h1>
+          <div class="detail-profile">
+            <img class="detail-portrait" src="{{ '/assets/img/jaewon-cho.jpg' | relative_url }}" alt="{{ t.portrait }}" width="2250" height="2893">
+            <div class="detail-profile-copy">
+              <h2 class="detail-name">{{ t.detail_name }}</h2>
+              <p class="alternate-name">{{ t.detail_korean_name }}</p>
+              <p class="subtitle">Data · AI · Engineering</p>
+              <h3>{{ t.detail_hobbies_title }}</h3>
+              <ul class="hobbies-list">
+                {% for hobby in t.detail_hobbies %}
+                  <li>{{ hobby }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <h2>{{ t.detail_bio_title }}</h2>
+          <dl class="interests-list">
+            {% for entry in t.detail_bio %}
+              <div>
+                <dt>{{ entry.label }}</dt>
+                <dd>{{ entry.body }}</dd>
+              </div>
+            {% endfor %}
+          </dl>
+        </section>
+      {% endif %}
+
       {% if page.kind == 'home' %}
         <section id="about" aria-labelledby="profile-title">
           <div class="profile-heading">
@@ -77,7 +115,7 @@
               <h1 id="profile-title">Jaewon Cho</h1>
               <p class="subtitle">Data · AI · Engineering</p>
             </div>
-            <img class="profile-photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="{{ t.portrait }}" width="100" height="112">
+            <img class="profile-photo" src="{{ '/assets/img/jaewon-cho.jpg' | relative_url }}" alt="{{ t.portrait }}" width="100" height="112">
           </div>
           <div class="biography">
             {% for paragraph in t.bio %}

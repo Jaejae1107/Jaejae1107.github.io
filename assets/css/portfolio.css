@@ -137,9 +137,9 @@ strong {
 }
 .profile-photo {
   width: 100px;
-  height: 112px;
+  height: 129px;
   object-fit: cover;
-  object-position: center 62%;
+  object-position: center;
   border-radius: 5px;
   border: 1px solid var(--line);
 }
@@ -378,7 +378,7 @@ html[lang="ko"] dd {
   }
   .profile-photo {
     width: 75px;
-    height: 88px;
+    height: 96px;
   }
   .profile-heading {
     gap: 12px;
@@ -430,5 +430,75 @@ html[lang="ko"] dd {
   }
   .document > section {
     margin-bottom: 24px;
+  }
+}
+
+.site-header nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+.personal-detail > h1 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+.detail-profile {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.detail-portrait {
+  display: block;
+  width: 190px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.detail-name {
+  font-size: 28px;
+  border: 0;
+  padding: 0;
+  margin: 0 0 4px;
+}
+.alternate-name {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.detail-profile-copy h3 {
+  margin-top: 28px;
+  font-size: 16px;
+}
+.hobbies-list {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .detail-profile {
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .detail-portrait {
+    width: 110px;
+  }
+  .detail-name {
+    font-size: 24px;
+  }
+  .detail-profile-copy .subtitle {
+    font-size: 13px;
+  }
+  .detail-profile-copy h3 {
+    margin-top: 18px;
+  }
+  .hobbies-list {
+    gap: 16px;
+  }
+}
+@media print {
+  .detail-profile {
+    break-inside: avoid;
   }
 }

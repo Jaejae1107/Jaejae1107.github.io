@@ -44,7 +44,7 @@ class Page(HTMLParser):
             self.alternates[attrs['hreflang']] = attrs['href']
 
 
-routes = ['/', '/projects/', '/cv/'] + [f'/projects/{p["id"]}/' for p in data['projects']]
+routes = ['/', '/projects/', '/cv/', '/detail/'] + [f'/projects/{p["id"]}/' for p in data['projects']]
 for route in routes:
     for lang, prefix in [('en', ''), ('ko', '/ko')]:
         url = prefix + route

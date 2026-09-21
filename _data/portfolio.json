@@ -28,7 +28,7 @@
       "My experience spans <strong>data analytics, machine learning, software engineering, and AI-driven problem solving</strong>. I have worked on projects ranging from electric vehicle charging demand forecasting and synthetic data generation to backend system development and data-driven analysis in the semiconductor industry.",
       "I especially enjoy turning complex and ambiguous problems into structured, actionable solutions. Whether I am analyzing data, building a system, or collaborating with a team, I focus on understanding the problem first and finding practical ways to create measurable impact.",
       "Along the way, I have had opportunities to work with multidisciplinary teams and participate in global analytics competitions. These experiences taught me that strong results rarely come from technical skills alone — they come from <strong>curiosity, collaboration, and the willingness to keep improving</strong>.",
-      "Outside of work, I enjoy basketball, music, and exploring new technologies and ideas."
+      "Outside of work, I enjoy basketball and travel."
     ],
     "journey": [
       {
@@ -73,6 +73,27 @@
         "title": "Collaboration",
         "body": "Working with people from different backgrounds and turning diverse perspectives into better solutions."
       }
+    ],
+    "nav_detail": "Detail",
+    "detail_title": "Detail",
+    "detail_name": "Jaewon Cho",
+    "detail_korean_name": "조재원",
+    "detail_bio_title": "Brief Biography",
+    "detail_hobbies_title": "Hobbies",
+    "detail_hobbies": ["Basketball", "Travel"],
+    "detail_bio": [
+      {
+        "label": "Present",
+        "body": "Data-driven problem solving and analytics in the semiconductor industry."
+      },
+      {
+        "label": "Experience",
+        "body": "Backend systems and database development at Samsung Electronics; EV charging demand forecasting and synthetic data research with SAS ORSOL."
+      },
+      {
+        "label": "Highlights",
+        "body": "SAS Hackathon global 1st place (2024) and SAS Curiosity Cup 2nd place (2024)."
+      }
     ]
   },
   "ko": {
@@ -104,7 +125,7 @@
       "<strong>데이터 분석, 머신러닝, 소프트웨어 엔지니어링, AI 기반 문제 해결</strong>을 경험해 왔습니다. 전기차 충전 수요 예측과 합성 데이터 생성부터 백엔드 시스템 개발, 반도체 산업의 데이터 기반 분석까지 다양한 프로젝트를 수행했습니다.",
       "복잡하고 모호한 문제를 구조화하고, 실행 가능한 해결책으로 구체화하는 일을 좋아합니다. 데이터를 분석하거나 시스템을 구축할 때, 팀과 협업할 때에도 문제를 먼저 이해하고 측정 가능한 성과로 이어지는 실용적인 방법을 찾는 데 집중합니다.",
       "다양한 분야의 동료들과 협업하고 글로벌 데이터 분석 대회에 참여하면서, 좋은 결과는 기술 역량만으로 만들어지지 않는다는 것을 배웠습니다. <strong>호기심, 협업, 꾸준히 개선하려는 자세</strong>를 중요하게 생각합니다.",
-      "일 외에는 농구와 음악을 즐기고, 새로운 기술과 아이디어를 탐색합니다."
+      "일 외에는 농구와 여행을 즐깁니다."
     ],
     "journey": [
       {
@@ -148,6 +169,27 @@
       {
         "title": "협업",
         "body": "서로 다른 배경의 사람들과 협력하며, 다양한 관점을 더 나은 해결책으로 발전시킵니다."
+      }
+    ],
+    "nav_detail": "Detail",
+    "detail_title": "Detail",
+    "detail_name": "조재원",
+    "detail_korean_name": "Jaewon Cho",
+    "detail_bio_title": "간단한 약력",
+    "detail_hobbies_title": "취미",
+    "detail_hobbies": ["농구", "여행"],
+    "detail_bio": [
+      {
+        "label": "현재",
+        "body": "반도체 산업에서 데이터 기반 문제 해결과 분석을 수행하고 있습니다."
+      },
+      {
+        "label": "주요 경험",
+        "body": "삼성전자에서 백엔드 시스템과 데이터베이스 개발을 경험했고, SAS ORSOL에서 전기차 충전 수요 예측과 합성 데이터를 연구했습니다."
+      },
+      {
+        "label": "주요 성과",
+        "body": "2024 SAS Hackathon 글로벌 1위, 2024 SAS Curiosity Cup 2위를 수상했습니다."
       }
     ]
   },
