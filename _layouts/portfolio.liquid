@@ -105,6 +105,12 @@
               </div>
             {% endfor %}
           </dl>
+          <h2>{{ t.detail_photos_title }}</h2>
+          <div class="detail-gallery">
+            {% for photo in t.detail_photos %}
+              <img src="{{ '/assets/img/' | append: photo.file | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy">
+            {% endfor %}
+          </div>
         </section>
       {% endif %}
 

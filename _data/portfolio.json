@@ -78,9 +78,13 @@
     "detail_title": "Detail",
     "detail_name": "Jaewon Cho",
     "detail_korean_name": "조재원",
-    "detail_bio_title": "Brief Biography",
+    "detail_bio_title": "Background & Experience",
     "detail_hobbies_title": "Hobbies",
-    "detail_hobbies": ["Basketball", "Travel"],
+    "detail_hobbies": [
+      "Watching and playing basketball",
+      "Samsung Lions fan for 13 years",
+      "Travel · Music"
+    ],
     "detail_bio": [
       {
         "label": "Present",
@@ -93,6 +97,25 @@
       {
         "label": "Highlights",
         "body": "SAS Hackathon global 1st place (2024) and SAS Curiosity Cup 2nd place (2024)."
+      },
+      {
+        "label": "Education & internship",
+        "body": "Studied Computer Engineering and participated in the 2025 Samsung Electronics DS Global Internship."
+      },
+      {
+        "label": "Life abroad",
+        "body": "Lived in five U.S. states for at least a year each, and am spending autumn in Korea for the first time in ten years."
+      }
+    ],
+    "detail_photos_title": "Travel moments",
+    "detail_photos": [
+      {
+        "file": "travel-city.jpg",
+        "alt": "A bridge framed by city buildings"
+      },
+      {
+        "file": "travel-nature.jpg",
+        "alt": "Snow-covered mountains reflected in a river"
       }
     ]
   },
@@ -175,9 +198,13 @@
     "detail_title": "Detail",
     "detail_name": "조재원",
     "detail_korean_name": "Jaewon Cho",
-    "detail_bio_title": "간단한 약력",
+    "detail_bio_title": "주요 이력",
     "detail_hobbies_title": "취미",
-    "detail_hobbies": ["농구", "여행"],
+    "detail_hobbies": [
+      "농구 관람과 플레이",
+      "삼성 라이온즈 13년 차 팬",
+      "여행 · 음악 감상"
+    ],
     "detail_bio": [
       {
         "label": "현재",
@@ -190,6 +217,25 @@
       {
         "label": "주요 성과",
         "body": "2024 SAS Hackathon 글로벌 1위, 2024 SAS Curiosity Cup 2위를 수상했습니다."
+      },
+      {
+        "label": "전공 · 인턴십",
+        "body": "컴퓨터공학 전공. 2025년 삼성전자 DS 글로벌 인턴십에 참여했습니다."
+      },
+      {
+        "label": "해외 생활",
+        "body": "미국 5개 주에서 각각 1년 이상 거주했으며, 10년 만에 한국에서 가을을 맞고 있습니다."
+      }
+    ],
+    "detail_photos_title": "여행의 기록",
+    "detail_photos": [
+      {
+        "file": "travel-city.jpg",
+        "alt": "도시 건물 사이로 보이는 다리"
+      },
+      {
+        "file": "travel-nature.jpg",
+        "alt": "눈 덮인 산과 강의 풍경"
       }
     ]
   },
@@ -198,7 +244,11 @@
       "id": "Hackathonn",
       "category": "research",
       "theme": "climate",
-      "tags": ["Python", "SAS Viya", "Data analysis"],
+      "tags": [
+        "Python",
+        "SAS Viya",
+        "Data analysis"
+      ],
       "image": "hackintro.jpg",
       "en": {
         "title": "Climate Vulnerability Analysis",
@@ -248,7 +298,11 @@
       "id": "EVcharge",
       "category": "research",
       "theme": "ev",
-      "tags": ["Time series", "SAS", "Forecasting"],
+      "tags": [
+        "Time series",
+        "SAS",
+        "Forecasting"
+      ],
       "image": "ev-demand-background.jpg",
       "en": {
         "title": "EV Charging Demand Forecasting",
@@ -309,7 +363,11 @@
       "id": "Synthetic",
       "category": "research",
       "theme": "synthetic",
-      "tags": ["Python", "TimeGAN", "VAE"],
+      "tags": [
+        "Python",
+        "TimeGAN",
+        "VAE"
+      ],
       "image": "synthetic-data-overview.jpg",
       "en": {
         "title": "Synthetic Data for EV Demand Forecasting",
@@ -351,7 +409,11 @@
       "id": "Boilertime",
       "category": "personal",
       "theme": "boiler",
-      "tags": ["Flutter", "Dart", "Firebase"],
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Firebase"
+      ],
       "image": "boilertimepic.jpg",
       "en": {
         "title": "Boiler Time",
@@ -399,7 +461,11 @@
       "id": "FIRE",
       "category": "personal",
       "theme": "fire",
-      "tags": ["Computer vision", "Infrared", "Cloud"],
+      "tags": [
+        "Computer vision",
+        "Infrared",
+        "Cloud"
+      ],
       "image": "FIreprof.jpg",
       "en": {
         "title": "FIRE: Fire Detection & Rescue Support",
