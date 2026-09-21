@@ -132,9 +132,11 @@
       {% endif %}
       {% if page.kind == 'home' or page.kind == 'cv' %}
         <section id="journey" aria-labelledby="journey-title">
-          <{% if page.kind == 'cv' %}h1{% else %}h2{% endif %} id="journey-title">
-            {{- t.journey_title -}}
-          </{% if page.kind == 'cv' %}h1{% else %}h2{% endif %}>
+          {% if page.kind == 'cv' %}
+            <h1 id="journey-title">{{ t.journey_title }}</h1>
+          {% else %}
+            <h2 id="journey-title">{{ t.journey_title }}</h2>
+          {% endif %}
           <table class="journey-table">
             <thead>
               <tr>
@@ -168,9 +170,11 @@
       {% endif %}
       {% if page.kind == 'home' or page.kind == 'projects' %}
         <section id="work" aria-labelledby="work-title">
-          <{% if page.kind == 'projects' %}h1{% else %}h2{% endif %} id="work-title">
-            {%- if page.kind == 'home' %}{{ t.selected }}{% else %}{{ t.project_page_title }}{% endif -%}
-          </{% if page.kind == 'projects' %}h1{% else %}h2{% endif %}>
+          {% if page.kind == 'projects' %}
+            <h1 id="work-title">{{ t.project_page_title }}</h1>
+          {% else %}
+            <h2 id="work-title">{{ t.selected }}</h2>
+          {% endif %}
           <p class="section-intro">{{ t.work_intro }}</p>
           <div class="filters" hidden aria-label="{% if lang == 'ko' %}프로젝트 필터{% else %}Project filters{% endif %}">
             <button type="button" data-filter="all" aria-pressed="true">{{ t.all }}</button
