@@ -80,11 +80,7 @@
     "detail_korean_name": "조재원",
     "detail_bio_title": "Background & Experience",
     "detail_hobbies_title": "Hobbies",
-    "detail_hobbies": [
-      "Watching and playing basketball",
-      "Samsung Lions fan for 13 years",
-      "Travel · Music"
-    ],
+    "detail_hobbies": ["Watching and playing basketball", "Samsung Lions fan for 13 years", "Travel · Music"],
     "detail_bio": [
       {
         "label": "Present",
@@ -200,11 +196,7 @@
     "detail_korean_name": "Jaewon Cho",
     "detail_bio_title": "주요 이력",
     "detail_hobbies_title": "취미",
-    "detail_hobbies": [
-      "농구 관람과 플레이",
-      "삼성 라이온즈 13년 차 팬",
-      "여행 · 음악 감상"
-    ],
+    "detail_hobbies": ["농구 관람과 플레이", "삼성 라이온즈 13년 차 팬", "여행 · 음악 감상"],
     "detail_bio": [
       {
         "label": "현재",
@@ -244,11 +236,7 @@
       "id": "Hackathonn",
       "category": "research",
       "theme": "climate",
-      "tags": [
-        "Python",
-        "SAS Viya",
-        "Data analysis"
-      ],
+      "tags": ["Python", "SAS Viya", "Data analysis"],
       "image": "hackintro.jpg",
       "en": {
         "title": "Climate Vulnerability Analysis",
@@ -298,11 +286,7 @@
       "id": "EVcharge",
       "category": "research",
       "theme": "ev",
-      "tags": [
-        "Time series",
-        "SAS",
-        "Forecasting"
-      ],
+      "tags": ["Time series", "SAS", "Forecasting"],
       "image": "ev-demand-background.jpg",
       "en": {
         "title": "EV Charging Demand Forecasting",
@@ -363,11 +347,7 @@
       "id": "Synthetic",
       "category": "research",
       "theme": "synthetic",
-      "tags": [
-        "Python",
-        "TimeGAN",
-        "VAE"
-      ],
+      "tags": ["Python", "TimeGAN", "VAE"],
       "image": "synthetic-data-overview.jpg",
       "en": {
         "title": "Synthetic Data for EV Demand Forecasting",
@@ -409,11 +389,7 @@
       "id": "Boilertime",
       "category": "personal",
       "theme": "boiler",
-      "tags": [
-        "Flutter",
-        "Dart",
-        "Firebase"
-      ],
+      "tags": ["Flutter", "Dart", "Firebase"],
       "image": "boilertimepic.jpg",
       "en": {
         "title": "Boiler Time",
@@ -461,11 +437,7 @@
       "id": "FIRE",
       "category": "personal",
       "theme": "fire",
-      "tags": [
-        "Computer vision",
-        "Infrared",
-        "Cloud"
-      ],
+      "tags": ["Computer vision", "Infrared", "Cloud"],
       "image": "FIreprof.jpg",
       "en": {
         "title": "FIRE: Fire Detection & Rescue Support",
